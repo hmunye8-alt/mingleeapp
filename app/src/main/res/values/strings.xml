@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Minglee</string>
+    <string name="telefon_numaras_90">Telefon numarası (+90...)</string>
+    <string name="kod_gonder">Kod Gönder</string>
+    <string name="dogrulama_kodu">Doğrulama kodu</string>
+    <string name="dogrula_ve_giris_yap">Doğrula ve Giriş Yap</string>
+    <string name="fotograf_se">Fotoğraf Seç</string>
+    <string name="kisiler">Kişiler</string>
+</resources>

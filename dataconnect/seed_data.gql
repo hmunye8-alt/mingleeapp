@@ -1,0 +1,106 @@
+mutation CreateDemoData @transaction @auth(level: USER, insecureReason: "Seed data mutation, safe for any logged in user to run once.") {
+  user_insertMany(data: [
+    {
+      id: "b455b77c-a45b-4c5c-8d1e-8e0f1d5e3c7a",
+      uid: "firebase-uid-1",
+      displayName: "Alice Smith",
+      createdAt: "2023-01-01T10:00:00Z",
+      photoUrl: "https://example.com/alice.jpg",
+      lastActiveAt: "2023-01-01T10:00:00Z"
+    },
+    {
+      id: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      uid: "firebase-uid-2",
+      displayName: "Bob Johnson",
+      createdAt: "2023-01-01T10:05:00Z",
+      photoUrl: "https://example.com/bob.jpg",
+      lastActiveAt: "2023-01-01T10:05:00Z"
+    }
+  ])
+  chat_insertMany(data: [
+    {
+      id: "c8e1d5e3-c7a2-4b3f-8c0d-6e9f0a1b2c3d",
+      name: "General Chat",
+      createdAt: "2023-01-01T10:10:00Z",
+      updatedAt: "2023-01-01T10:10:00Z",
+      isGroupChat: true
+    },
+    {
+      id: "f9b2a1c0-d3e4-5f6a-7b8c-9d0e1f2a3b4c",
+      name: "Alice & Bob",
+      createdAt: "2023-01-01T10:15:00Z",
+      updatedAt: "2023-01-01T10:15:00Z",
+      isGroupChat: false
+    }
+  ])
+  chatParticipant_insertMany(data: [
+    {
+      userId: "b455b77c-a45b-4c5c-8d1e-8e0f1d5e3c7a",
+      chatId: "c8e1d5e3-c7a2-4b3f-8c0d-6e9f0a1b2c3d",
+      joinedAt: "2023-01-01T10:10:30Z"
+    },
+    {
+      userId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      chatId: "c8e1d5e3-c7a2-4b3f-8c0d-6e9f0a1b2c3d",
+      joinedAt: "2023-01-01T10:11:00Z"
+    },
+    {
+      userId: "b455b77c-a45b-4c5c-8d1e-8e0f1d5e3c7a",
+      chatId: "f9b2a1c0-d3e4-5f6a-7b8c-9d0e1f2a3b4c",
+      joinedAt: "2023-01-01T10:15:30Z"
+    },
+    {
+      userId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      chatId: "f9b2a1c0-d3e4-5f6a-7b8c-9d0e1f2a3b4c",
+      joinedAt: "2023-01-01T10:16:00Z"
+    }
+  ])
+  chatMessage_insertMany(data: [
+    {
+      id: "m1a3b5c7-d9e0-f1a2-b3c4-d5e6f7a8b9c0",
+      chatId: "c8e1d5e3-c7a2-4b3f-8c0d-6e9f0a1b2c3d",
+      senderId: "b455b77c-a45b-4c5c-8d1e-8e0f1d5e3c7a",
+      text: "Hello everyone in General Chat!",
+      createdAt: "2023-01-01T10:12:00Z",
+      type: "text"
+    },
+    {
+      id: "n2o4p6q8-r0s1-t2u3-v4w5-x6y7z8a9b0c1",
+      chatId: "c8e1d5e3-c7a2-4b3f-8c0d-6e9f0a1b2c3d",
+      senderId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      text: "Hi Alice!",
+      createdAt: "2023-01-01T10:13:00Z",
+      type: "text"
+    },
+    {
+      id: "e1f3g5h7-i9j0-k1l2-m3n4-o5p6q7r8s9t0",
+      chatId: "f9b2a1c0-d3e4-5f6a-7b8c-9d0e1f2a3b4c",
+      senderId: "b455b77c-a45b-4c5c-8d1e-8e0f1d5e3c7a",
+      text: "Hey Bob, how are you?",
+      createdAt: "2023-01-01T10:17:00Z",
+      type: "text"
+    },
+    {
+      id: "u1v3w5x7-y9z0-a1b2-c3d4-e5f6g7h8i9j0",
+      chatId: "f9b2a1c0-d3e4-5f6a-7b8c-9d0e1f2a3b4c",
+      senderId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      text: "I'm doing great, thanks Alice!",
+      createdAt: "2023-01-01T10:18:00Z",
+      type: "text"
+    }
+  ])
+  deviceToken_insertMany(data: [
+    {
+      id: "d1e3f5g7-h9i0-j1k2-l3m4-n5o6p7q8r9s0",
+      token: "device-token-alice-1",
+      createdAt: "2023-01-01T10:00:30Z",
+      userId: "b455b77c-a45b-4c5c-8d1e-8e0f1d5e3c7a"
+    },
+    {
+      id: "t1u3v5w7-x9y0-z1a2-b3c4-d5e6f7g8h9i0",
+      token: "device-token-bob-1",
+      createdAt: "2023-01-01T10:05:30Z",
+      userId: "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"
+    }
+  ])
+}

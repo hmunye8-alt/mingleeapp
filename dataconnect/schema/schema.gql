@@ -1,0 +1,37 @@
+type User @table {
+  uid: UUID!
+  displayName: String!
+  createdAt: Timestamp!
+  photoUrl: String
+  lastActiveAt: Timestamp
+}
+
+type DeviceToken @table {
+  token: String!
+  createdAt: Timestamp!
+  user: User!
+}
+
+type Chat @table {
+  name: String!
+  createdAt: Timestamp!
+  updatedAt: Timestamp!
+  isGroupChat: Boolean
+  photoUrl: String
+}
+
+type ChatMessage @table {
+  text: String!
+  createdAt: Timestamp!
+  sender: User!
+  chat: Chat!
+  type: String
+  imageUrl: String
+}
+
+type ChatParticipant @table(key: ["user", "chat"]) {
+  user: User!
+  chat: Chat!
+  joinedAt: Timestamp!
+  lastReadMessage: ChatMessage
+}

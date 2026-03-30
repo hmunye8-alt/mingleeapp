@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "624653614497",
+    "firebase_url": "https://minglee-491717-default-rtdb.firebaseio.com",
+    "project_id": "minglee-491717",
+    "storage_bucket": "minglee-491717.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624653614497:android:5519544e0e0b1a3c225fe0",
+        "android_client_info": {
+          "package_name": "com.timecompany.mingleeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgm6xUMDQ18LUVpYTaJTfCNGVFnaAFip8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

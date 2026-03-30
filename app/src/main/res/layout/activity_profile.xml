@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Profil Fotoğrafı -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:scaleType="centerCrop"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Fotoğraf Seç Butonu -->
+        <Button
+            android:id="@+id/buttonSelectImage"
+            android:text="Fotoğraf Seç"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- İsim -->
+        <EditText
+            android:id="@+id/editName"
+            android:hint="Ad Soyad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Bio -->
+        <EditText
+            android:id="@+id/editBio"
+            android:hint="Hakkında"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Kaydet Butonu -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:text="Kaydet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
