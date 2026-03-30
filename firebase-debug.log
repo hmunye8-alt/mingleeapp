@@ -1,10 +1,10 @@
-[debug] [2026-03-30T10:23:12.234Z] ----------------------------------------------------------------------
-[debug] [2026-03-30T10:23:12.236Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gff63\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
-[debug] [2026-03-30T10:23:12.237Z] CLI Version:   15.12.0
-[debug] [2026-03-30T10:23:12.237Z] Platform:      win32
-[debug] [2026-03-30T10:23:12.237Z] Node Version:  v24.14.1
-[debug] [2026-03-30T10:23:12.237Z] Time:          Mon Mar 30 2026 13:23:12 GMT+0300 (Türkiye Standart Saati)
-[debug] [2026-03-30T10:23:12.237Z] ----------------------------------------------------------------------
+[debug] [2026-03-30T10:31:31.567Z] ----------------------------------------------------------------------
+[debug] [2026-03-30T10:31:31.569Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gff63\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2026-03-30T10:31:31.569Z] CLI Version:   15.12.0
+[debug] [2026-03-30T10:31:31.569Z] Platform:      win32
+[debug] [2026-03-30T10:31:31.569Z] Node Version:  v24.14.1
+[debug] [2026-03-30T10:31:31.569Z] Time:          Mon Mar 30 2026 13:31:31 GMT+0300 (Türkiye Standart Saati)
+[debug] [2026-03-30T10:31:31.569Z] ----------------------------------------------------------------------
 [debug] 
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
@@ -27,21 +27,21 @@ Before we get started, keep in mind:
 [info] First, let's associate this project directory with a Firebase project.
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] 
-[debug] [2026-03-30T10:23:14.487Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2026-03-30T10:23:14.487Z] > authorizing via signed-in user (hmunye8@gmail.com)
-[debug] [2026-03-30T10:23:14.489Z] Checked if tokens are valid: true, expires at: 1774868272043
-[debug] [2026-03-30T10:23:14.489Z] Checked if tokens are valid: true, expires at: 1774868272043
-[debug] [2026-03-30T10:23:14.490Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-868c9 [none]
-[debug] [2026-03-30T10:23:15.139Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-868c9 200
-[debug] [2026-03-30T10:23:15.139Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-868c9 {"projectId":"chat-868c9","projectNumber":"1061713819829","displayName":"Chat","name":"projects/chat-868c9","resources":{"hostingSite":"chat-868c9","realtimeDatabaseInstance":"chat-868c9-default-rtdb"},"state":"ACTIVE","etag":"1_f66fe310-68c1-455e-bd33-ed0190f725a1"}
+[debug] [2026-03-30T10:31:33.854Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-30T10:31:33.854Z] > authorizing via signed-in user (hmunye8@gmail.com)
+[debug] [2026-03-30T10:31:33.856Z] Checked if tokens are valid: true, expires at: 1774868272043
+[debug] [2026-03-30T10:31:33.856Z] Checked if tokens are valid: true, expires at: 1774868272043
+[debug] [2026-03-30T10:31:33.859Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-868c9 [none]
+[debug] [2026-03-30T10:31:34.492Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-868c9 200
+[debug] [2026-03-30T10:31:34.492Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-868c9 {"projectId":"chat-868c9","projectNumber":"1061713819829","displayName":"Chat","name":"projects/chat-868c9","resources":{"hostingSite":"chat-868c9","realtimeDatabaseInstance":"chat-868c9-default-rtdb"},"state":"ACTIVE","etag":"1_f66fe310-68c1-455e-bd33-ed0190f725a1"}
 [info] i  Using project chat-868c9 (Chat) . 
 [info] 
 === Hosting Setup
-[debug] [2026-03-30T10:23:15.164Z] Checked if tokens are valid: true, expires at: 1774868272043
-[debug] [2026-03-30T10:23:15.164Z] Checked if tokens are valid: true, expires at: 1774868272043
-[debug] [2026-03-30T10:23:15.164Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-868c9 [none]
-[debug] [2026-03-30T10:23:15.577Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-868c9 200
-[debug] [2026-03-30T10:23:15.577Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-868c9 {"projectId":"chat-868c9","projectNumber":"1061713819829","displayName":"Chat","name":"projects/chat-868c9","resources":{"hostingSite":"chat-868c9","realtimeDatabaseInstance":"chat-868c9-default-rtdb"},"state":"ACTIVE","etag":"1_f66fe310-68c1-455e-bd33-ed0190f725a1"}
+[debug] [2026-03-30T10:31:34.519Z] Checked if tokens are valid: true, expires at: 1774868272043
+[debug] [2026-03-30T10:31:34.519Z] Checked if tokens are valid: true, expires at: 1774868272043
+[debug] [2026-03-30T10:31:34.519Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-868c9 [none]
+[debug] [2026-03-30T10:31:34.811Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-868c9 200
+[debug] [2026-03-30T10:31:34.811Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-868c9 {"projectId":"chat-868c9","projectNumber":"1061713819829","displayName":"Chat","name":"projects/chat-868c9","resources":{"hostingSite":"chat-868c9","realtimeDatabaseInstance":"chat-868c9-default-rtdb"},"state":"ACTIVE","etag":"1_f66fe310-68c1-455e-bd33-ed0190f725a1"}
 [info] 
 [info] Your public directory is the folder (relative to your project directory) that
 [info] will contain Hosting assets to be uploaded with firebase deploy. If you
@@ -52,10 +52,10 @@ Before we get started, keep in mind:
 [info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
 [info] 
 [info] Visit this URL on this device to log in:
-[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1071416327&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=60822131&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
 [info] 
 [info] Waiting for authentication...
-[debug] [2026-03-30T10:23:18.496Z] Error: spawn cmd ENOENT
+[debug] [2026-03-30T10:32:37.595Z] Error: spawn cmd ENOENT
     at ChildProcess._handle.onexit (node:internal/child_process:286:19)
     at onErrorNT (node:internal/child_process:484:16)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
